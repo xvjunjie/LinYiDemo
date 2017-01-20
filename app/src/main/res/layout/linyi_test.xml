@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/layout_border">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/cancel"
+            android:id="@+id/iv_cancel"
+            />
+       <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#F6AC3F"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="键盘输入或点击麦克风说话"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_input"
+            android:background="@null"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#F6AC3F"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/voice_import"
+            android:id="@+id/iv_said"
+            />
+    </LinearLayout>
+</LinearLayout>

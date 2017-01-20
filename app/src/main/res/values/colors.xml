@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_blue">#68B3E8</color>
+    <color name="transparent05">#00000000</color>
+    <color name="transparent06">#55000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_btn">#AAAAAA</color>
+    <color name="password">#FF9933</color>
+    <color name="white_30">#30ffffff</color>
+    <color name="black">#000000</color>
+    <color name="hint">#B5B5B5</color>
+    <color name="light_black">#444444</color>
+    <color name="light_blackm">#dd444444</color>
+    <color name="light_grey">#cacaca</color>
+    <color name="green">#6FBA2C</color>
+    <color name="gray_2">#EEEFEE</color>
+    <!-- 外框橙 -->
+    <color name="orange">#F39806</color>
+    <color name="grey_out">#EFEFEF</color>
+    <color name="grey_bac">#9FA0A0</color>
+    <!-- 内框粉 -->
+    <color name="pink">#FFF6e9</color>
+    <color name="dial_cancl">#FFBB00</color>
+    <color name="line_color">#F5F5F5</color>
+    <color name="grey">#f0f0f0</color>
+    <color name="grey_small">#F6F7F7</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#1E90FF</color>
+    <!-- 热粉红色 -->
+    <color name="tomato">#FF6347</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 自定义控件topTitleBar的默认背景色 -->
+    <color name="topTitleBar_default_background">#18B5EA</color>
+    <color name="seperator">#EBEBEB</color>
+    <color name="emoji_keyboard_bg_light">#f6f5f5</color>
+    <color name="chat_keyboard_bg">#ECECEC</color>
+    <color name="chatting_bg_gray">#666D6D6D</color>
+    <color name="chatting_text">#6D6D6D</color>
+    <color name="grey_textligh">#a0a0a0</color>
+    <color name="red">#ff0000</color>
+    <!-- 优惠券 -->
+    <color name="blue_coupon">#39AFED</color>
+    <!-- 我的余额 -->
+    <color name="orange_bg">#FF7F00</color>
+    <color name="grey_bg">#e6e6e6</color>
+    <!-- 顶部背景 -->
+    <color name="top_bg">#FAFAFA</color>
+    <!-- 发送消息按钮 -->
+    <color name="btn_green">#1EAA15</color>
+    <color name="horizontal_divider">#8f8f8f</color>
+    <color name="horizontal_vertical">#8f8f8f</color>
+    <color name="pay_bg">#999999</color>
+    <color name="gray_l">#e0e0e0</color>
+    <color name="viewfinder_mask">#50ffffff</color>
+    <color name="yellow_1">#FFD900</color>
+    <color name="search_line">#f7b248</color>
+    <color name="filtrae__selected">#008B8B</color>
+    <color name="filtrae_calander_week">#FEF5E8</color>
+    <color name="filtrae_line">#F39600</color>
+    <!-- 我的桌面 -->
+    <color name="albumback">#E1E0DE</color>
+    <color name="bar_color">#A9A9A9</color>
+    <color name="hongse">#E60012</color>
+
+    <!-- 从底部弹出 -->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <!-- 从中间弹出的提示框 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+
+</resources>
