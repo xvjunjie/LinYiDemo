@@ -13,21 +13,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/wdzl2x"
-            android:id="@+id/imageView2"
+            android:id="@+id/third_image"
             android:layout_weight="1" />
 
         <TextView
-            android:text="TextView"
+
+            android:text="third_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
+            android:id="@+id/third_name"
             android:layout_weight="1" />
 
         <TextView
-            android:text="TextView"
+            android:text="third_tel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView4"
+            android:id="@+id/third_tel"
             android:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>

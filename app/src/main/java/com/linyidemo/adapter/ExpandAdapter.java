@@ -18,6 +18,7 @@ import java.util.List;
 
 /**
  * Created by 15596 on 2017/1/18.
+ * 第一个适配器
  */
 
 public class ExpandAdapter extends BaseExpandableListAdapter {
@@ -98,11 +99,16 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         ExpandableListView treeView = getExpandableListView(firstList.get(groupPosition).getSecondItems().size());
+        ExpandAdapter2 expandAdapter2 = new ExpandAdapter2(context, firstList,
+                childPosition, groupPosition,treeView,stvClickEvent);
+        //treeView.setOnChildClickListener(stvClickEvent);
+        treeView.setAdapter(expandAdapter2);//注意点
 
-        return null;
+        return treeView;
     }
 
 
+    //设置布局参数
     public ExpandableListView getExpandableListView(int position) {
         AbsListView.LayoutParams params = new AbsListView.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, Constants.SECOND_ITEM_HEIGHT * position);

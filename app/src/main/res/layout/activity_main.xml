@@ -17,8 +17,17 @@
         android:text="but_ToExpandAblesListview"
         style="@style/but_base"/>
     <Button
-        android:id="@+id/but_TabActivity"
-        android:text="TabActivity"
+        android:id="@+id/btn_TabActivity"
+        android:text="btn_TabActivity"
+        style="@style/but_base"/>
+    <Button
+        android:id="@+id/btn_ThirdExpandAblesListview"
+        android:text="btn_ThirdExpandAblesListview"
+        style="@style/but_base"/>
+
+    <Button
+        android:id="@+id/btn_DragViewActivity"
+        android:text="btn_DragViewActivity"
         style="@style/but_base"/>
     <Button
         android:id="@+id/btn_PopupWindowActivity"
