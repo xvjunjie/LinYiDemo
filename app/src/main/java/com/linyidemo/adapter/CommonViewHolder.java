@@ -78,10 +78,6 @@ public class CommonViewHolder
         return mConvertView;
     }
 
-
-
-
-
     public int getLayoutId()
     {
         return mLayoutId;

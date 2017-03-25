@@ -24,6 +24,8 @@
         <activity android:name=".activity.ThirdExpandListViewActivity"/>
         <activity android:name=".activity.DragViewActivity"/>
 
+        <activity android:name=".activity.ComActivity"/>
+
 
         <service android:name=".service.FloatingService"/>
 

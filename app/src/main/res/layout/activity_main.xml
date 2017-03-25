@@ -38,4 +38,9 @@
         android:id="@+id/btn_FloatView"
         android:text="btn_FloatView"
         style="@style/but_base"/>
+
+    <Button
+        android:id="@+id/btn_ComAdapter"
+        android:text="btn_ComAdapter"
+        style="@style/but_base"/>
 </LinearLayout>

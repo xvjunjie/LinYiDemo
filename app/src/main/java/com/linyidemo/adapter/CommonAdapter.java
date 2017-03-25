@@ -15,20 +15,9 @@ import java.util.List;
 
 public abstract class CommonAdapter<T> extends BaseAdapter{
 
-    /**
-     * 上下文
-     */
     protected Context mContext;
-    /**
-     * 数据源
-     */
     protected List<T> listDatas;
-    /**
-     * Item布局ID
-     */
     protected int layoutId;
-
-
 
     public List<T> getList() {
         return listDatas;
@@ -67,16 +56,15 @@ public abstract class CommonAdapter<T> extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        CommonViewHolder holder = CommonViewHolder.get(mContext ,convertView ,parent ,layoutId ,position);
-        setConverView(holder, getItem(position));
-        return holder.getConvertView();
+        CommonViewHolder viewHolder = CommonViewHolder.get(mContext ,convertView ,parent ,layoutId ,position);
+        setConvertView(viewHolder, getItem(position));
+        return viewHolder.getConvertView();
     }
 
     /**
      *
      * 抽象方法，用于子类实现，填充数据
-     * @param holder
      */
-    protected abstract void setConverView(CommonViewHolder holder, T bean);
+    protected abstract void setConvertView(CommonViewHolder viewHolder, T bean);
 
 }

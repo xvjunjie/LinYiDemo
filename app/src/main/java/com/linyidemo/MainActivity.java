@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.linyidemo.activity.ComActivity;
 import com.linyidemo.activity.DragViewActivity;
 import com.linyidemo.activity.FloatView;
 import com.linyidemo.activity.MyExpandListviewActivity;
@@ -15,6 +16,7 @@ import com.linyidemo.appbase.AppBaseActivity;
 import com.linyidemo.service.FloatingService;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppBaseActivity {
 
@@ -36,6 +38,9 @@ public class MainActivity extends AppBaseActivity {
     @Bind(R.id.btn_FloatView)
     Button btn_FloatView;
 
+    @Bind(R.id.btn_ComAdapter)
+    Button btnComAdapter;
+
     @Override
     public int getLayoutResId() {
         return R.layout.activity_main;
@@ -51,7 +56,7 @@ public class MainActivity extends AppBaseActivity {
         btn_FloatView.setOnClickListener(this);
         btn_ThirdExpandAblesListview.setOnClickListener(this);
         btn_DragViewActivity.setOnClickListener(this);
-
+        btnComAdapter.setOnClickListener(this);
     }
 
     @Override
@@ -61,9 +66,11 @@ public class MainActivity extends AppBaseActivity {
             case R.id.but_ToExpandAblesListview:
                 startActivity(this, MyExpandListviewActivity.class);
                 break;
+
             case R.id.btn_TabActivity:
                 startActivity(this, TabActivity.class);
                 break;
+
             case R.id.btn_ThirdExpandAblesListview:
                 startActivity(this, ThirdExpandListViewActivity.class);
                 break;
@@ -71,12 +78,18 @@ public class MainActivity extends AppBaseActivity {
             case R.id.btn_DragViewActivity:
                 startActivity(this, DragViewActivity.class);
                 break;
+
             case R.id.btn_PopupWindowActivity:
                 startActivity(this, PopupWindowActivity.class);
                 break;
+
             case R.id.btn_FloatView:
-                Intent intent = new Intent(MainActivity.this,FloatingService.class);
+                Intent intent = new Intent(MainActivity.this, FloatingService.class);
                 startService(intent);
+                break;
+
+            case R.id.btn_ComAdapter :
+                startActivity(this, ComActivity.class);
                 break;
 
         }
@@ -84,7 +97,7 @@ public class MainActivity extends AppBaseActivity {
     }
 
     private void btn_FloatView() {
-        FloatView.showFloatView(this,R.layout.linyi_test);
+        FloatView.showFloatView(this, R.layout.linyi_test);
 
     }
 
@@ -94,4 +107,10 @@ public class MainActivity extends AppBaseActivity {
     }
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
+    }
 }
